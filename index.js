@@ -5,7 +5,7 @@ const serviceAccount = require("./tracified-service-account-key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://tracified-afc05.firebaseio.com/"
+  databaseURL: "https://tracified-cc9e8.firebaseio.com/"
 });
 
 const db = admin.database();
