@@ -97,18 +97,16 @@ function syncTransactions(txns, callback) {
   }
 }
 
-// setInterval(() => {
+setInterval(() => {
 
-//   async.waterfall([
-//     getHighestSyncedBlock,
-//     getLatestBlock,
-//     syncBlocks,
-//     syncTransactions
-//   ], (err, result) => {
-//     console.log(result);
-//     console.log("");
-//   });
+  async.waterfall([
+    getHighestSyncedBlock,
+    getLatestBlock,
+    syncBlocks,
+    syncTransactions
+  ], (err, result) => {
+    console.log(result);
+    console.log("");
+  });
 
-// }, 10000);
-
-console.log(admin.storage());
+}, 10000);
