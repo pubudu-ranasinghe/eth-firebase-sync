@@ -1,0 +1,13 @@
+{
+  "name": "eth-firebase-sync",
+  "version": "0.1.0",
+  "description": "Firebase DB sync for ethereum private blockchains",
+  "main": "index.js",
+  "author": "Pubudu Ranasinghe",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0",
+    "firebase-admin": "^5.1.0",
+    "web3": "0.20"
+  }
+}
